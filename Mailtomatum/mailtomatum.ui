@@ -122,6 +122,13 @@ QGroupBox{
          </property>
         </widget>
        </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>Limpiar</string>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
     </item>

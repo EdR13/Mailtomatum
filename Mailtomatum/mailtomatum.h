@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 #include <QPainter>
+#include <QMessageBox>
+#include <QSound>
+
+#include "automata.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Mailtomatum; }
@@ -21,10 +25,15 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Mailtomatum *ui;
     void paintEvent(QPaintEvent *pe);
     void enableValidar();
+
+    Automata automata;
+    QMessageBox message;
 
 };
 #endif // MAILTOMATUM_H

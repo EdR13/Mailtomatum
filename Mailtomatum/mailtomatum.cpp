@@ -8,6 +8,7 @@ Mailtomatum::Mailtomatum(QWidget *parent)
     ui->setupUi(this);
     QPixmap img(":/images/mail1q.png");
     ui->label->setPixmap(img);
+    QSound::play(":sounds/Bienvenida.wav");
 }
 
 Mailtomatum::~Mailtomatum()
@@ -48,5 +49,26 @@ void Mailtomatum::on_lineEdit_textChanged(const QString &arg1)
 
 void Mailtomatum::on_pushButton_clicked()
 {
-    //HAcer algo.
+    bool isValid = automata.isValid(ui->lineEdit->text());
+    if(isValid)
+    {
+        QSound::play(":/sounds/Info.wav");
+        message.setText("¡El correo es válido!");
+        message.setWindowTitle("Correo válido");
+        message.setWindowIcon(QIcon(":/images/comprobar.png"));
+        message.exec();
+    }
+    else
+    {
+        QSound::play(":/sounds/Error.wav");
+        message.setText("El correo que ingresaste no es válido.");
+        message.setWindowTitle("Correo no válido :(");
+        message.setWindowIcon(QIcon(":/images/cancelar.png"));
+        message.exec();
+    }
+}
+
+void Mailtomatum::on_pushButton_2_clicked()
+{
+    ui->lineEdit->clear();
 }

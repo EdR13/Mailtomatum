@@ -10,10 +10,12 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    automata.cpp \
     main.cpp \
     mailtomatum.cpp
 
 HEADERS += \
+    automata.h \
     mailtomatum.h
 
 FORMS += \
@@ -30,3 +32,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     Images.qrc \
     Sounds.qrc
+
+RC_ICONS = Icono.ico
