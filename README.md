@@ -9,6 +9,7 @@ No te preocupes si no tienes instalado Qt, puedes descargar el ejecutable del pr
 
 **Instalación**
 
+Para instalar Mailtomatum es necesario que tengas un descompresor de archivos, se recomienda Winrar o 7-Zip.
 La instalación de Mailtomatum es sencilla, solo sigue los pasos del ejecutable y al finalizar tendrás un acceso directo de Mailtomatum en tu escritorio.
 
 **Desinstalación**
