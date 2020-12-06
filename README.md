@@ -14,4 +14,4 @@ La instalación de Mailtomatum es sencilla, solo sigue los pasos del ejecutable 
 
 **Desinstalación**
 
-Puedes desisntalar Mailtomatum a través del panel de control.
+Puedes desinstalar Mailtomatum a través del panel de control.
